@@ -1,4 +1,4 @@
-project(maia-icons NONE)
+project(DamaDamas-icons NONE)
 
 cmake_minimum_required(VERSION 2.8)
 # include specific modules
@@ -20,13 +20,13 @@ set( damadamas_icon_dirs  actions apps categories devices emblems extras mimetyp
 set(DAMADAMAS_INSTALL_DIR ${ICON_INSTALL_DIR}/damadamas)
 install( DIRECTORY ${damadamas_icon_dirs} DESTINATION ${DAMADAMAS_INSTALL_DIR} PATTERN "*.sh" EXCLUDE )
 install( FILES index.theme DESTINATION ${DAMADAMAS_INSTALL_DIR})
-install(FILES colors metadata.desktop DESTINATION ${PLASMA_DATA_INSTALL_DIR}/desktoptheme/damadamas/)
+install(FILES colors metadata.desktop DESTINATION ${PLASMA_DATA_INSTALL_DIR}/usr/share/plasma/desktoptheme/damadamas/)
 
 FILE(GLOB widgets widgets/*.svgz)
-install( FILES ${widgets} DESTINATION ${PLASMA_DATA_INSTALL_DIR}/desktoptheme/damadamas/widgets/ )
+install( FILES ${widgets} DESTINATION ${PLASMA_DATA_INSTALL_DIR}/usr/share/plasma/desktoptheme/damadamas/widgets/ )
 
 FILE(GLOB dialogs dialogs/*.svgz)
-install( FILES ${dialogs} DESTINATION ${PLASMA_DATA_INSTALL_DIR}/desktoptheme/damadamas/dialogs/ )
+install( FILES ${dialogs} DESTINATION ${PLASMA_DATA_INSTALL_DIR}/usr/share/plasma/desktoptheme/damadamas/dialogs/ )
 
 FILE(GLOB icons icons/*.svgz)
-install( FILES ${icons} DESTINATION ${PLASMA_DATA_INSTALL_DIR}/desktoptheme/damadamas/icons/ )
+install( FILES ${icons} DESTINATION ${PLASMA_DATA_INSTALL_DIR}/usr/share/plasma/desktoptheme/damadamas/icons/ )
