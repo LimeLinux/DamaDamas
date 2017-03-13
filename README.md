@@ -1,2 +1,2 @@
-![alt tag](http://github.com/LimeLinux.com/DamaDamas/DamaDamas.png)
+![alt tag](https://github.com/LimeLinux/DamaDamas/blob/master/DamaDamas.png)
 By Fatih Kaya : fatihkaya@limelinux.com
